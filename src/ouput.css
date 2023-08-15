@@ -560,6 +560,10 @@ video {
   top: 0px;
 }
 
+.top-5{
+  top: 1.25rem;
+}
+
 .-z-10{
   z-index: -10;
 }
@@ -572,6 +576,10 @@ video {
 .-ms-1{
   -webkit-margin-start: -0.25rem;
           margin-inline-start: -0.25rem;
+}
+
+.mb-16{
+  margin-bottom: 4rem;
 }
 
 .mb-2{
@@ -604,14 +612,6 @@ video {
   margin-top: 2rem;
 }
 
-.mb-16{
-  margin-bottom: 4rem;
-}
-
-.mb-32{
-  margin-bottom: 8rem;
-}
-
 .flex{
   display: flex;
 }
@@ -640,10 +640,6 @@ video {
   max-height: 250px;
 }
 
-.max-h-screen{
-  max-height: 100vh;
-}
-
 .w-1\/2{
   width: 50%;
 }
@@ -666,10 +662,6 @@ video {
 
 .max-w-\[250px\]{
   max-width: 250px;
-}
-
-.cursor-zoom-in{
-  cursor: zoom-in;
 }
 
 .grid-cols-2{
@@ -715,15 +707,6 @@ video {
 .bg-\[\#24292F\]{
   --tw-bg-opacity: 1;
   background-color: rgb(36 41 47 / var(--tw-bg-opacity));
-}
-
-.bg-black{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
-.bg-cover{
-  background-size: cover;
 }
 
 .p-3{
@@ -786,6 +769,11 @@ video {
   line-height: 2.25rem;
 }
 
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -796,27 +784,12 @@ video {
   line-height: 1.75rem;
 }
 
-.text-6xl{
-  font-size: 3.75rem;
-  line-height: 1;
-}
-
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
+.font-extrabold{
+  font-weight: 800;
 }
 
 .font-medium{
   font-weight: 500;
-}
-
-.font-extrabold{
-  font-weight: 800;
 }
 
 .text-white{
@@ -874,17 +847,24 @@ video {
 }
 
 @media (min-width: 640px){
-  .sm\:hidden{
-    display: none;
+  .sm\:relative{
+    position: relative;
   }
 
-  .sm\:object-cover{
-    -o-object-fit: cover;
-       object-fit: cover;
+  .sm\:mt-16{
+    margin-top: 4rem;
   }
 }
 
 @media (min-width: 1024px){
+  .lg\:absolute{
+    position: absolute;
+  }
+
+  .lg\:top-0{
+    top: 0px;
+  }
+
   .lg\:flex{
     display: flex;
   }
@@ -895,14 +875,6 @@ video {
 
   .lg\:max-h-72{
     max-height: 18rem;
-  }
-
-  .lg\:max-h-screen{
-    max-height: 100vh;
-  }
-
-  .lg\:w-full{
-    width: 100%;
   }
 
   .lg\:text-4xl{
