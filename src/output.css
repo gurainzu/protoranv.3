@@ -757,38 +757,6 @@ video {
   animation: fade-right 1s both;
 }
 
-@keyframes pulse{
-  50%{
-    opacity: .5;
-  }
-}
-
-.animate-pulse{
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-@keyframes shake{
-  0%{
-    transform: translateX(0rem);
-  }
-
-  25%{
-    transform: translateX(-1rem);
-  }
-
-  75%{
-    transform: translateX(1rem);
-  }
-
-  100%{
-    transform: translateX(0rem);
-  }
-}
-
-.animate-shake{
-  animation: shake .5s both;
-}
-
 @keyframes fade-up{
   0%{
     opacity: 0;
@@ -803,6 +771,16 @@ video {
 
 .animate-fade-up{
   animation: fade-up 1s both;
+}
+
+@keyframes pulse{
+  50%{
+    opacity: .5;
+  }
+}
+
+.animate-pulse{
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 .items-center{
@@ -1069,16 +1047,8 @@ video {
   transition-duration: 150ms;
 }
 
-.animate-normal{
-  animation-direction: normal;
-}
-
 .animate-duration-1000{
   animation-duration: 1000ms;
-}
-
-.animate-duration-\[2000ms\]{
-  animation-duration: 2000ms;
 }
 
 .animate-infinite{
@@ -1089,8 +1059,14 @@ video {
   animation-iteration-count: 1;
 }
 
-.animate-ease-linear{
-  animation-timing-function: linear;
+@keyframes pulse{
+  50%{
+    opacity: .5;
+  }
+}
+
+.hover\:animate-pulse:hover{
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 @keyframes shake{
@@ -1129,16 +1105,6 @@ video {
   animation: wiggle 1s both;
 }
 
-@keyframes pulse{
-  50%{
-    opacity: .5;
-  }
-}
-
-.hover\:animate-pulse:hover{
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
 .hover\:bg-\[\#24292F\]\/90:hover{
   background-color: rgb(36 41 47 / 0.9);
 }
@@ -1166,20 +1132,20 @@ video {
   animation-direction: normal;
 }
 
-.hover\:animate-duration-500:hover{
-  animation-duration: 500ms;
+.hover\:animate-duration-1000:hover{
+  animation-duration: 1000ms;
 }
 
-.hover\:animate-duration-\[2500ms\]:hover{
-  animation-duration: 2500ms;
+.hover\:animate-duration-500:hover{
+  animation-duration: 500ms;
 }
 
 .hover\:animate-duration-\[2000ms\]:hover{
   animation-duration: 2000ms;
 }
 
-.hover\:animate-duration-1000:hover{
-  animation-duration: 1000ms;
+.hover\:animate-duration-\[2500ms\]:hover{
+  animation-duration: 2500ms;
 }
 
 .hover\:animate-infinite:hover{
@@ -1225,12 +1191,6 @@ video {
   }
 }
 
-@media (min-width: 640px){
-  .sm\:max-w-md{
-    max-width: 28rem;
-  }
-}
-
 @media (min-width: 1024px){
   .lg\:-mt-16{
     margin-top: -4rem;
@@ -1266,10 +1226,6 @@ video {
 
   .lg\:w-3\/5{
     width: 60%;
-  }
-
-  .lg\:max-w-7xl{
-    max-width: 80rem;
   }
 
   .lg\:max-w-\[350px\]{
